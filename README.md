@@ -1,4 +1,5 @@
 ## Zde jsem použil cgi.escape() k ošetření uživatelského vstupu. Tímto způsobem se minimalizuje riziko útoků typu XSS tím, že se zakáží vložení HTML tagů a JavaScriptu do vstupních dat.
+### Tato knihovna nahradí speciální znaky HTML entitami, čímž zabrání interpretaci HTML tagů a JavaScriptu.
 
 ```
 def _GetParameter(self, params, name, default=None):
